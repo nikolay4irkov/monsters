@@ -205,7 +205,10 @@ export const scripts = () => {
 	const bundle = () => {
 		return bundler
 			.bundle()
-			.on("error", function () {})
+			.on("error", function (e) {
+				console.log("\x1b[31m", `Scripts:${e}`);
+				this.emit('end');
+			})
 			.pipe(source("main.js"))
 			.pipe(buffer())
 			.pipe(gulpif(!production, sourcemaps.init()))
