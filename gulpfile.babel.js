@@ -87,7 +87,8 @@ export const server = () => {
 		server: "./dist/",
 		port: 4000,
 		tunnel: false,
-		notify: true
+		notify: true,
+		ghostMode: false,
 	});
 };
 
