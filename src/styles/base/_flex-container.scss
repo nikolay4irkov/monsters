@@ -1,0 +1,9 @@
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container--space-between {
+  justify-content: space-between;
+}
