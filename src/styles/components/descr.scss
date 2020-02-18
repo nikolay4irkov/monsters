@@ -1,0 +1,20 @@
+.descr_p {
+  border: 1px solid #bdbdbd;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  width: 200px;
+  padding: 0 15px;
+  text-align: center;
+  margin-right: 20px;
+
+  @media (max-width: $max-sm) {
+    width: calc(50% - 10px);
+    padding: 0 5px;
+    margin-right: 0;
+
+    &:first-of-type {
+      margin-right: auto;
+    }
+  }
+}

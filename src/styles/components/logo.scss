@@ -1,0 +1,32 @@
+.logo {
+  background: url(../img/sprites/sprite.svg#logo-black) no-repeat -80px center;
+  background-size: contain;
+  height: 87px;
+  padding-left: 60px;
+  font-family: 'Comfortaa';
+  font-size: 17px;
+  color: $black;
+  line-height: 1.1;
+  padding-top: 32px;
+  transform-origin: left;
+  transition: all $basic-transition;
+
+  @media (max-width: $max-md) {
+    font-size: 0;
+    background: url(../img/sprites/sprite.svg#logo-mob) no-repeat center;
+    background-size: cover;
+    width: 90px;
+    height: 58px;
+  }
+
+  &:active {
+    text-shadow: 0px 0px 1px $red;
+  }
+
+  .is-scrolled & {
+    @media (min-width: $min-md) {
+      color: transparent;
+      transform: scale(0.8);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+//bad-practice!
+.report-slider {
+  overflow: hidden;
+  padding: 10px 5px;
+
+  @media (max-width: $max-sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.report {
+  position: relative;
+  border: 1px solid $red;
+  padding: 135px 40px 25px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100% !important;
+  min-height: 200px;
+  transition: box-shadow $basic-transition;
+
+  &:hover {
+    box-shadow: 0px 0px 7px rgba($red, 0.85);
+  }
+
+  @media (max-width: $max-sm) {
+    height: 200px;
+    width: 200px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: url(../img/sprites/sprite.svg#report) no-repeat center;
+    background-size: cover;
+    width: 48px;
+    height: 71px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+  }
+}

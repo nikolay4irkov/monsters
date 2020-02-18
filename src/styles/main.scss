@@ -1,22 +1,44 @@
-@import "libs";
+@import 'libs';
 
 //base
-@import "base/slick";
-@import "base/colors";
-@import "base/screen-width";
-@import "base/fonts";
-@import "base/screen-width";
-@import "base/common";
-@import "base/font-styles";
-@import "base/flex-container";
-@import "base/screen-width";
+@import 'base/fonts';
+@import 'base/colors';
+@import 'base/transition-timings';
+@import 'base/screen-width';
+@import 'base/common';
+@import 'base/font-styles';
+@import 'base/basic-spacings';
+@import 'base/basic-sizes';
+@import 'base/title';
+@import 'base/text';
+@import 'base/buttons';
+@import 'base/d-flex';
+@import 'base/layout-blocks';
 
 //includes
-@import "includes/footer";
-@import "includes/header";
+@import 'includes/footer';
+@import 'includes/header';
+@import 'includes/nav';
+@import 'includes/menu';
+@import 'includes/f-sidebar';
 
 //components
-
-//sections
-
-//pages
+@import 'components/form';
+@import 'components/banner';
+@import 'components/card';
+@import 'components/slider';
+@import 'components/logo';
+@import 'components/descr';
+@import 'components/toggler';
+@import 'components/sidebar-card';
+@import 'components/lib-card';
+@import 'components/t-container';
+@import 'components/share';
+@import 'components/comm-news';
+@import 'components/wide-news';
+@import 'components/pagination';
+@import 'components/about';
+@import 'components/404';
+@import 'components/history';
+@import 'components/report';
+@import 'components/worker';

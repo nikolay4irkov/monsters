@@ -1,0 +1,50 @@
+.pagination {
+  display: flex;
+
+  @media (max-width: $max-sm) {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+  }
+
+  .next {
+    margin-left: 10px;
+
+    @media (max-width: $max-sm) {
+      bottom: 0;
+      position: absolute;
+      right: 10px;
+    }
+  }
+
+  .prev {
+    margin-right: 10px;
+
+    @media (max-width: $max-sm) {
+      bottom: 0;
+      position: absolute;
+      left: 10px;
+    }
+  }
+}
+
+.pagination_b {
+  color: $black;
+  border: 1px solid $border-color-grey;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  transition: color $basic-transition;
+
+  &.active,
+  &:hover {
+    color: $red;
+  }
+}
+
+.pagination_d {
+  border-color: transparent;
+  margin: 0;
+  width: 45px;
+}

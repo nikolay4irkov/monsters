@@ -1,0 +1,32 @@
+.menu {
+  position: fixed;
+  z-index: 3;
+  background: $white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // opacity: 0;
+  pointer-events: none;
+  transition: transform 0.75s;
+  transform: translateX(100%);
+
+  @media (max-width: $max-sm) {
+    padding-top: 75px;
+  }
+
+  .is-menu & {
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+}
+
+.menu_nav {
+  opacity: 0;
+  transition: opacity 0.65s;
+  transition-delay: 0.85s;
+
+  .is-menu & {
+    opacity: 1;
+  }
+}

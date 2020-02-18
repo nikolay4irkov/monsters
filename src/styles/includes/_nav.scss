@@ -1,0 +1,70 @@
+.nav {
+  width: 100%;
+  display: none;
+
+  @media (min-width: $min-md) {
+    max-width: 430px;
+    display: flex;
+  }
+
+  @media (min-width: $min-lg) {
+    max-width: 530px;
+  }
+}
+
+.nav_i {
+  position: relative;
+  font-family: 'Comfortaa';
+  transition: text-shadow $basic-transition;
+
+  &:hover,
+  &.is-active {
+    &:before {
+      transform: scaleX(1);
+    }
+  }
+
+  &:active {
+    text-shadow: 0px 0px 1px $red;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 45%;
+    height: 2px;
+    background: $red;
+    transform: scaleX(0);
+    transition: transform $basic-transition;
+    transform-origin: left;
+  }
+}
+
+.nav_i--large {
+  display: block;
+  margin-bottom: 25px;
+  line-height: 1.25;
+
+  @media (max-width: $max-sm) {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  @media (min-width: $min-sm) {
+    line-height: 46px;
+    font-size: 26px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav_i--fline {
+  &:before {
+    height: 6px;
+    width: 90px;
+  }
+}

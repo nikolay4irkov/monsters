@@ -1,0 +1,43 @@
+.f--comforta {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.title--extra {
+  font-weight: bold;
+
+  @media (min-width: $min-sm) {
+    font-weight: 800;
+  }
+}
+
+.title--bold {
+  font-weight: bold;
+}
+
+.title--h1 {
+  font-size: 24px;
+
+  @media (min-width: $min-md) {
+    font-size: 36px;
+  }
+}
+
+.title--h2 {
+  font-size: 18px;
+
+  @media (min-width: $min-md) {
+    font-size: 24px;
+  }
+}
+
+.title--h3 {
+  font-size: 18px;
+}
+
+.lh-24px {
+  line-height: 24px;
+}
+
+.lh-1-28 {
+  line-height: 1.28;
+}

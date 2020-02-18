@@ -1,5 +1,8 @@
 'use strict';
 
 import './jquery-global.js';
-import 'jquery.cookie';
-import 'slick-carousel';
+import './sliders';
+import './onload-check';
+import './menu-toggle';
+import './inview-check';
+import './scroll-event';

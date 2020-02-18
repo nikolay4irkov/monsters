@@ -1,0 +1,21 @@
+.sidebar {
+  width: 100%;
+
+  @media (min-width: $min-sm) {
+    max-width: calc(40% - 10px);
+  }
+}
+
+.sidebar--thin {
+  @media (min-width: $min-sm) {
+    max-width: calc(30% - 10px);
+  }
+}
+
+.content {
+  width: 100%;
+
+  @media (min-width: $min-sm) {
+    max-width: calc(60% - 10px);
+  }
+}
