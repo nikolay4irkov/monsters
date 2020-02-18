@@ -84,12 +84,6 @@ main {
   }
 }
 
-.d-sm-block {
-  @media (min-width: $min-sm) {
-    display: block;
-  }
-}
-
 .d-md-block {
   @media (min-width: $min-md) {
     display: block;
@@ -135,7 +129,12 @@ main {
   }
 }
 
-//Не знал куда поместить..
+.d-sm-block {
+  @media (min-width: $min-sm) {
+    display: block;
+  }
+}
+
 .proj-img {
   @media (max-width: $max-sm) {
     height: 400px;

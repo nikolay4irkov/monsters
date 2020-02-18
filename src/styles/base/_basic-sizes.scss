@@ -2,6 +2,16 @@
   height: 100%;
 }
 
+.h-300 {
+  height: 300px;
+}
+
+.h-md-400 {
+  @media (min-width: $min-md) {
+    height: 400px;
+  }
+}
+
 .w-100 {
   width: 100%;
 }
@@ -19,6 +29,16 @@
 .h-sm-auto {
   @media (min-width: $min-sm) {
     height: auto;
+  }
+}
+
+.h-340 {
+  height: 340px;
+}
+
+.w-mob-50p {
+  @media (max-width: $max-sm) {
+    width: calc(50% - 10px);
   }
 }
 
@@ -56,4 +76,10 @@
 
 .max-420 {
   max-width: 420px;
+}
+
+.mob-max-250 {
+  @media (max-width: $max-sm) {
+    max-width: 250px;
+  }
 }
