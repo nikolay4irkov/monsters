@@ -71,17 +71,18 @@ main {
   padding: 0 15px;
   margin: 0 auto;
 
-  @media (min-width: $min-md) {
-    max-width: 980px;
-  }
+  //Писать свои значения
+  // @media (min-width: $min-md) {
+  //   max-width: 980px;
+  // }
 
-  @media (min-width: $min-lg) {
-    max-width: 1110px;
-  }
+  // @media (min-width: $min-lg) {
+  //   max-width: 1110px;
+  // }
 
-  @media (min-width: 1500px) {
-    max-width: 1210px;
-  }
+  // @media (min-width: 1500px) {
+  //   max-width: 1210px;
+  // }
 }
 
 .d-md-block {
@@ -96,20 +97,6 @@ main {
 
 .position-relative {
   position: relative;
-}
-
-.delimiter {
-  width: 100%;
-  border-bottom: 1px solid #bdbdbd;
-  margin: 20px 0;
-
-  .footer & {
-    display: block !important;
-  }
-
-  @media (max-width: $max-sm) {
-    display: none;
-  }
 }
 
 .img {
@@ -132,16 +119,6 @@ main {
 .d-sm-block {
   @media (min-width: $min-sm) {
     display: block;
-  }
-}
-
-.proj-img {
-  @media (max-width: $max-sm) {
-    height: 400px;
-    width: 100vw;
-    margin-left: -15px;
-    margin-right: -15px;
-    object-fit: cover;
   }
 }
 

@@ -4,6 +4,7 @@
 .mb-auto {
   margin-bottom: auto;
 }
+
 .mb-sm-auto {
   @media (min-width: $min-sm) {
     margin-bottom: auto;
@@ -20,22 +21,6 @@
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-md-0 {
-  @media (min-width: $min-md) {
-    margin-left: 0;
-  }
-}
-
-.mr-md-10 {
-  @media (min-width: $min-md) {
-    margin-right: 10px;
-  }
-}
-
-.mr-10 {
-  margin-right: 10px;
 }
 
 .mt-50 {
@@ -100,12 +85,6 @@
 
 .mt-30 {
   margin-top: 30px;
-}
-
-.mt-sm-10 {
-  @media (min-width: $min-sm) {
-    margin-top: 10px;
-  }
 }
 
 .mt-sm-45 {
@@ -185,21 +164,5 @@
 .mb-sm-100 {
   @media (min-width: $min-sm) {
     margin-bottom: 100px;
-  }
-}
-// Паддинги
-.pt-90 {
-  padding-top: 90px;
-}
-
-.pt-sm-100 {
-  @media (min-width: $min-sm) {
-    padding-top: 100px;
-  }
-}
-
-.pt-sm-155 {
-  @media (min-width: $min-sm) {
-    padding-top: 155px;
   }
 }
