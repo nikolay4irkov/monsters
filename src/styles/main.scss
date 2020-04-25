@@ -10,14 +10,21 @@
 @import 'base/basic-spacings';
 @import 'base/basic-sizes';
 @import 'base/title';
-@import 'base/text';
 @import 'base/buttons';
 @import 'base/d-flex';
-@import 'base/layout-blocks';
+@import 'base/section';
 
 //includes
 @import 'includes/footer';
 @import 'includes/header';
 
+
 //components
-@import 'components/404';
+@import 'components/card-square';
+@import 'components/modal';
+@import 'components/form';
+
+//pages
+@import 'pages/index';
+
+

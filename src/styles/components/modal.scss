@@ -1,0 +1,58 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: $white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $basic-transition;
+  width: 100%;
+  padding: 36px 13px 44px;
+  border-radius: 30px;
+  box-shadow: 18px 18px 30px #EDECFF;
+
+  @media screen and (min-width: $max-md) {
+    width: 700px;
+    padding: 50px 75px 40px;
+  }
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.close-mod {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+
+  @media screen and (min-width: $max-xs) {
+    top: 17px;
+    right: 21px;
+  }
+}
+
+//.modal-bg {
+//  position: fixed;
+//  z-index: 10;
+//  top: 0;
+//  left: 0;
+//  bottom: 0;
+//  right: 0;
+//  background: rgba(0, 0, 0, 0.5);
+//  opacity: 0;
+//  pointer-events: none;
+//  transition: opacity $basic-transition;
+//
+//  &.is-open {
+//    opacity: 1;
+//    pointer-events: auto;
+//  }
+//}

@@ -5,18 +5,62 @@ button {
 
 .button {
   padding: 0;
-  height: 50px;
-  width: 200px;
+  height: 60px;
+  width: 265px;
   text-align: center;
   font-weight: bold;
   font-size: 14px;
-  transition: background $basic-transition, color $basic-transition;
+  transition: transform $basic-transition;
   border: none;
-}
-
-.button--link {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  border-radius: 30px;
+  background: linear-gradient(360deg, #6C00C0 0%, rgba(228, 5, 193, 0) 100%), #FF00B5;
+  color: $white;
+  text-transform: uppercase;
+
+  @media (min-width: $min-lg){
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.button--blue {
+  background: linear-gradient(180deg, #3844FF 0%, #000559 100%);
+}
+
+.button--wide {
+  width: 320px;
+}
+
+.button--monsters {
+  @media (max-width: $max-md){
+    margin: 0 auto;
+  }
+}
+
+.button-video {
+  z-index: 1;
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $min-lg){
+    bottom: 36px;
+  }
+}
+
+.button-video__img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+
+  @media (min-width: $min-lg){
+    width: 144px;
+    height: 144px;
+  }
 }

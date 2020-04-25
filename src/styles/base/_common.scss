@@ -37,14 +37,10 @@ body {
   max-width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'SF Pro Rounded', sans-serif;
+  font-weight: 300;
   background: $white;
-  padding-top: 95px;
-
-  @media (min-width: $min-sm) {
-    padding-top: 125px;
-  }
+  color: $black;
 }
 
 button {
@@ -61,15 +57,15 @@ main {
   position: relative;
   transition: opacity 0.55s, transform 0.55s;
 
-  &:not(.is-loaded) {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+  //&:not(.is-loaded) {
+  //  opacity: 0;
+  //  transform: translateY(20px);
+  //}
 }
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 13px;
   margin: 0 auto;
 
   //Писать свои значения
@@ -77,9 +73,9 @@ main {
   //   max-width: 980px;
   // }
 
-  // @media (min-width: $min-lg) {
-  //   max-width: 1110px;
-  // }
+   @media (min-width: $min-lg) {
+     max-width: 1120px;
+   }
 
   // @media (min-width: 1500px) {
   //   max-width: 1210px;
@@ -103,24 +99,6 @@ main {
 .img {
   object-fit: cover;
   object-position: center;
-}
-
-.mob-hidden {
-  @media (max-width: $max-sm) {
-    display: none;
-  }
-}
-
-.mob-visible {
-  @media (min-width: $min-sm) {
-    display: none;
-  }
-}
-
-.d-sm-block {
-  @media (min-width: $min-sm) {
-    display: block;
-  }
 }
 
 .js-visible {

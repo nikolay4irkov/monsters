@@ -5,3 +5,4 @@ import './onload-check';
 import './menu-toggle';
 import './inview-check';
 import './scroll-event';
+import './modal';

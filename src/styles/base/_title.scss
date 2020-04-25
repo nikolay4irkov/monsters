@@ -1,22 +1,73 @@
-.title-main-page {
-  font-size: 36px;
+.ttl-1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 54px;
+}
 
-  @media screen and (min-width: $min-md) {
-    font-size: 48px;
+.ttl-2 {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 46px;
+}
+
+.ttl-3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.text--white {
+  color: $white;
+}
+
+.text--dark-grey {
+  color: $dark-grey;
+}
+
+.text--purple {
+  color: $purple;
+}
+
+.title-monsters {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: $dark-grey;
+  margin-bottom: 10px;
+  
+  @media (min-width: $min-md) {
+    font-size: 34px;
+    line-height: 38px;
   }
 }
 
-.title-section {
-  font-size: 36px;
-  font-weight: 600;
+.subtitle-monsters {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: $black;
+  margin-bottom: 10px;
+
+  @media (min-width: $min-md) {
+    margin-bottom: 20px;
+  }
 }
 
-.subtitle-main-page {
+.price-monsters {
+  font-weight: bold;
   font-size: 24px;
-  font-weight: 500;
-
-  @media screen and (min-width: $min-md) {
-    font-size: 19px;
-    font-weight: normal;
+  line-height: 29px;
+  color: $purple;
+  margin-bottom: 30px;
+  
+  @media (min-width: $min-md) {
+    font-size: 34px;
+    line-height: 41px;
   }
 }

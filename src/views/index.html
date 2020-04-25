@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MRB</title>
-    //= includes/head.html
-  </head>
-  <body>
-    //= includes/header.html
-    <main></main>
-    //= includes/footer.html
-    <!-- -->
-    //= includes/scripts.html
-  </body>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>CariesMonsters</title>
+  //= includes/head.html
+</head>
+<body>
+<main>
+  <section class="section section--book">
+    <div class="container">
+      <img src="./img/monsters.png" alt="" class="monsters-img">
+
+      <div class="main-wrapper">
+        <img src="./img/book.png" alt="" class="book-img">
+        <div class="info-wrapper">
+          <h1 class="title-monsters">“Мисливцi на карiозних монстрiв”</h1>
+          <p class="subtitle-monsters">Книга</p>
+          <p class="price-monsters">300 грн</p>
+          <a href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJwdWJsaWNfa2V5IjoiaTU2MTAyMDU3MDY1IiwiYW1vdW50IjoiMzAwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCa0L3QuNCz0LAgXCLQnNC40YHQu9C40LLRhtGWINC90LAg0LrQsNGA0ZbQvtC30L3QuNGFINC80L7QvdGB0YLRgNGW0LJcIiIsInR5cGUiOiJidXkiLCJsYW5ndWFnZSI6InVrIn0%3D&signature=Aa4QcpzP3UtICMDGlz87saZcBgI%3D"
+             target="_blank" class="button button--blue button--monsters js-modal-call" data-modal-target="modal-book">КУПИТИ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div id="modal-book" class="modal modal--book">
+    <img src="./img/sprites/sprite.svg#close-mod" alt="" class="close-mod js-modal-close">
+
+    <form action=""
+          class="form form--modal js-form"
+          data-modal-target="modal--thanks-book">
+
+      <input type="text" class="form__input form__input--text" id="modal-book__name" name="name" placeholder="Ім’я та Прізвище" required>
+
+      <input type="tel" class="form__input form__input--text" id="modal-book__phone" name="tel" placeholder="Номер телефону" required>
+
+      <input type="email" class="form__input form__input--text" name="email" placeholder="Email" required>
+
+      <input type="text" class="form__input form__input--text" name="city" placeholder="Місто" required>
+
+      <input type="text" class="form__input form__input--text" name="nova-poshta-department" placeholder="Відділення Нової Пошти" required>
+
+      <button type="submit"
+              class="button button--wide mx-auto">Оформити замовлення</button>
+    </form>
+  </div>
+
+  <!--<div class="modal-bg js-modal-bg js-modal-close"></div>-->
+
+
+</main>
+<!-- -->
+//= includes/scripts.html
+</body>
 </html>

@@ -1,36 +1,38 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-  url('../fonts/Montserrat-Bold.woff') format('woff'),
-  url('../fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-  url('../fonts/Montserrat-Regular.woff') format('woff'),
-  url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'SF Pro Rounded';
+  src: url('../fonts/regular.woff2') format('woff2'),
+  url('../fonts/regular.woff') format('woff'),
+  url('../fonts/regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
-  url('../fonts/Montserrat-Medium.woff') format('woff'),
-  url('../fonts/Montserrat-Medium.ttf') format('truetype');
-  font-weight: 500;
+  font-family: 'SF Pro Rounded';
+  src: url('../fonts/light.woff2') format('woff2'),
+  url('../fonts/light.woff') format('woff'),
+  url('../fonts/light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
-  url('../fonts/Montserrat-SemiBold.woff') format('woff'),
-  url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'SF Pro Rounded';
+  src: url('../fonts/bold.woff2') format('woff2'),
+  url('../fonts/bold.woff') format('woff'),
+  url('../fonts/bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('../fonts/black.woff2') format('woff2'),
+  url('../fonts/black.woff') format('woff'),
+  url('../fonts/black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 
