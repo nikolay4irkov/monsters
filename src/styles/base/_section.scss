@@ -15,22 +15,78 @@
     background: $dark-blue;
   }
 
-  @media (min-width: $min-md){
+  @media (min-width: $min-md) {
     height: 100vh;
     position: relative;
   }
 }
 
 .section--hero {
-  background: url("../img/bg.png")no-repeat center;
+  background: url("../img/bg.png") no-repeat center;
   background-size: cover;
   padding-top: 126px;
 
   @media (min-width: $min-lg) {
-    background: url("../img/banner-bg.png")no-repeat center;
-    background-size: 100%;
-    padding-top: 192px;
-    //min-height: 100vh;
-    padding-bottom: 332px;
+    background: none;
+    background-size: unset;
+    padding-top: 0;
+    min-height: 100vh;
+    height: 800px;
+  }
+
+  @media (min-width: $min-xxl) {
+    max-height: 1000px;
+  }
+}
+
+.section--hunters {
+  padding: 70px 0 65px;
+
+  @media (min-width: $min-sm) {
+    padding: 70px 0 180px;
+  }
+}
+
+.section--advantages {
+  @media (min-width: $min-md) {
+    padding-bottom: 160px;
+  }
+}
+
+.section--phones {
+  height: 1040px;
+  padding-top: 170px;
+
+  @media (min-width: $min-md) {
+
+  }
+
+  @media (min-width: $min-lg) {
+    height: 550px;
+  }
+}
+
+.section--founder {
+  padding-top: 50px;
+
+  @media (min-width: $min-md) {
+    padding-top: 150px;
+  }
+}
+
+.section--game {
+  height: 600px;
+  margin-top: 100px;
+}
+
+.section--proposal {
+  background: $yellow;
+  margin-top: 115px;
+  padding: 70px 0 70px;
+  height: auto;
+
+  @media (min-width: $min-md) {
+    margin-top: 200px;
+    padding: 130px 0 110px;
   }
 }

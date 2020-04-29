@@ -7,6 +7,7 @@ button {
   padding: 0;
   height: 60px;
   width: 265px;
+  min-width: 265px;
   text-align: center;
   font-weight: bold;
   font-size: 14px;
@@ -50,17 +51,47 @@ button {
   transform: translateX(-50%);
 
   @media (min-width: $min-lg){
+    bottom: 86px;
+  }
+
+  @media (min-width: $min-xl) {
     bottom: 36px;
   }
 }
 
 .button-video__img {
-  width: 80px;
+  width: 81px;
   height: 80px;
   object-fit: cover;
 
   @media (min-width: $min-lg){
+    //width: 144px;
+    //height: 144px;
+  }
+
+  @media (min-width: $min-xl) {
     width: 144px;
     height: 144px;
   }
 }
+
+.app-links-wrapper {
+  justify-content: space-between;
+
+  @media (min-width: $min-md) {
+    max-width: 360px;
+  }
+}
+
+.app-link__img {
+  width: 167px;
+  height: 50px;
+  object-fit: cover;
+  
+  @media (min-width: $min-md) {
+    width: 170px;
+    height: 51px;
+  }
+}
+
+

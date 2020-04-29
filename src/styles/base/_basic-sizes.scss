@@ -20,6 +20,18 @@
   width: auto !important;
 }
 
+.w-lg-400 {
+  @media (min-width: $min-lg) {
+    width: 400px;
+  }
+}
+
+.w-lg-510 {
+  @media (min-width: $min-lg) {
+    width: 510px;
+  }
+}
+
 .w-sm-auto {
   @media (min-width: $min-sm) {
     width: auto;
@@ -31,3 +43,22 @@
     height: auto;
   }
 }
+
+.h-lg-530 {
+  @media (min-width: $min-lg) {
+    height: 530px;
+  }
+}
+
+.w-lg-1025 {
+  @media (min-width: $min-lg) {
+   width: 1025px;
+  }
+}
+
+.w-lg-930 {
+  @media (min-width: $min-lg) {
+    width: 930px;
+  }
+}
+

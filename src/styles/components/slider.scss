@@ -1,0 +1,182 @@
+.swiper-button {
+  width: 48px;
+  height: 48px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(180deg, #3844FF 0%, #000559 100%);
+  border-radius: 50%;
+  transition: all $basic-transition;
+
+  &.swiper-button-prev--app {
+    background: url("../img/sprites/sprite.svg#prev") no-repeat 12px center, linear-gradient(180deg, #3844FF 0%, #000559 100%);
+    background-size: 20px, cover;
+
+    &.swiper-button-disabled {
+      background: url("../img/sprites/sprite.svg#prev") no-repeat 12px center, linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+      background-size: 20px, cover;
+    }
+  }
+
+  &.swiper-button-next--app {
+    background: url("../img/sprites/sprite.svg#next") no-repeat 16px center, linear-gradient(180deg, #3844FF 0%, #000559 100%);
+    background-size: 20px, cover;
+
+    &.swiper-button-disabled {
+      background: url("../img/sprites/sprite.svg#next") no-repeat 16px center, linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+      background-size: 20px, cover;
+    }
+  }
+
+  @media (min-width: $min-md) {
+    width: 75px;
+    height: 75px;
+
+
+    &.swiper-button-prev--app {
+      background: url("../img/sprites/sprite.svg#prev") no-repeat 18px center, linear-gradient(180deg, #3844FF 0%, #000559 100%);
+      background-size: 30px, cover;
+
+      &.swiper-button-disabled {
+        background: url("../img/sprites/sprite.svg#prev") no-repeat 18px center, linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+        background-size: 30px, cover;
+      }
+    }
+    &.swiper-button-next--app {
+      background: url("../img/sprites/sprite.svg#next") no-repeat 25px center, linear-gradient(180deg, #3844FF 0%, #000559 100%);
+      background-size: 30px, cover;
+
+      &.swiper-button-disabled {
+        background: url("../img/sprites/sprite.svg#next") no-repeat 25px center, linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+        background-size: 30px, cover;
+      }
+    }
+  }
+}
+
+.swiper-button-disabled {
+  cursor: unset;
+}
+
+
+.slider-game__buttons-wrapper {
+  @media (min-width: $min-md) {
+
+    .swiper-button {
+      width: 35px;
+      height: 35px;
+
+
+      &.swiper-button-prev--app {
+        background: url("../img/sprites/sprite.svg#prev") no-repeat 7px center, linear-gradient(180deg, #3844FF 0%, #000559 100%);
+        background-size: 18px, cover;
+
+        &.swiper-button-disabled {
+          background: url("../img/sprites/sprite.svg#prev") no-repeat 7px center, #D2D2D2;;
+          background-size: 18px, cover;
+        }
+      }
+
+      &.swiper-button-next--app {
+        background: url("../img/sprites/sprite.svg#next") no-repeat 11px center, linear-gradient(180deg, #3844FF 0%, #000559 100%);
+        background-size: 18px, cover;
+
+        &.swiper-button-disabled {
+          background: url("../img/sprites/sprite.svg#next") no-repeat 11px center, #D2D2D2;;
+          background-size: 18px, cover;
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+.swiper-container--game {
+  @media (min-width: $min-lg) {
+    width: 1120px;
+    height: 500px;
+  }
+}
+
+//.swiper-slide--game {
+//  @media (min-width: $min-lg) {
+//    height: 450px;
+//
+//  .card-square {
+//    position: absolute;
+//  }
+//  }
+//}
+
+.swiper-slide {
+  //transition: all !important;
+  //transition-duration: $basic-transition !important;
+}
+
+.swiper-pagination--game {
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+
+  .swiper-pagination-bullet {
+    outline: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #B3CDE9;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.swiper-pagination-bullet-active {
+      background: $purple;
+    }
+  }
+
+  @media (min-width: $min-lg) {
+    width: 1120px;
+    position: absolute;
+    bottom: -100px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -500px;
+      transform: translateY(-50%);
+      width: 200%;
+      height: 2px;
+      background: $purple;
+      z-index: -1;
+    }
+
+    .swiper-pagination-bullet {
+      width: 23px;
+      height: 23px;
+      background: $white;
+      border: 2px solid $purple;
+
+      &.swiper-pagination-bullet-active {
+        background: linear-gradient(180deg, #3844FF 0%, rgba(255, 255, 255, 0) 100%), #000559;
+      }
+    }
+  }
+}
+
+.slide-game {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: $min-lg) {
+    flex-direction: row;
+
+  }
+}
+
+.slide-game__text-block {
+  @media (min-width: $min-lg) {
+    max-width: 455px;
+
+  }
+}

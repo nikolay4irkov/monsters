@@ -8,6 +8,13 @@
   flex-direction: column;
 }
 
+.d-flex-md-row {
+  @media (min-width: $min-md) {
+    flex-direction: row;
+  }
+}
+
+
 .d-flex--space-between {
   justify-content: space-between;
 }
@@ -26,4 +33,20 @@
 
 .d-flex--nowrap {
   flex-wrap: nowrap;
+}
+
+.d-flex--wrap {
+  flex-wrap: wrap;
+}
+
+.d-flex-md-nowrap {
+  @media (min-width: $min-md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.d-flex-md-align-center {
+  @media (min-width: $min-md) {
+    align-items: center;
+  }
 }

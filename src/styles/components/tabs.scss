@@ -1,0 +1,159 @@
+.tabs-wrapper {
+  margin: 0 auto 60px;
+  display: flex;
+  width: 300px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+
+  @media (min-width: $min-lg) {
+    width: unset;
+    margin: unset;
+    display: block;
+  }
+}
+
+.tab {
+  cursor: pointer;
+
+  &.is-active {
+    cursor: unset;
+  }
+
+  @media (min-width: $min-lg) {
+    position: relative;
+    display: flex;
+    width: 400px;
+    padding: 17px 21px 17px 57px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+
+
+    &.is-active {
+      background: #D9AD00;
+      box-shadow: 0px 1px 2px rgba(5, 0, 255, 0.05), 0px 1px 3px rgba(0, 10, 255, 0.1);
+    }
+  }
+}
+
+.tab__logo-wrapper {
+  @media (max-width: $max-xs) {
+    width: 79px;
+    height: 75px;
+    display: flex;
+    border-radius: 4px;
+
+    .tab.is-active & {
+      background: #D9AD00;
+      box-shadow: 0px 1px 2px rgba(5, 0, 255, 0.05), 0px 1px 3px rgba(0, 10, 255, 0.1);
+    }
+  }
+
+  @media (min-width: $min-lg) {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.tab__logo {
+  margin: auto;
+
+  .tab:not(.is-active) & {
+    path, rect {
+      opacity: 0.5;
+      //fill: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+}
+
+.tab__logo--card {
+  @media (min-width: $min-lg) {
+    width: 16px;
+  }
+}
+
+.tab__logo--sticker {
+  @media (min-width: $min-lg) {
+    width: 20px;
+  }
+}
+
+.tab__logo--medal {
+  @media (min-width: $min-lg) {
+    width: 19px;
+  }
+}
+
+
+.tab__title {
+  display: none;
+
+  .tab.is-active & {
+    display: block;
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $min-lg) {
+    display: block;
+
+    .tab.is-active & {
+      width: unset;
+      text-align: left;
+      position: static;
+      transform: unset;
+    }
+
+    .tab:not(.is-active) & {
+      opacity: 0.5;
+    }
+  }
+}
+
+.tab-content {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+
+  &.is-active {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.good-img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+
+  &--small {
+    width: 169px;
+  }
+
+  @media (min-width: $min-lg){
+    padding-top: 20px;
+
+    &--small {
+      width: 100%;
+      //padding-right: 100px;
+      transform: translateY(-30px);
+    }
+  }
+}
+
+.proposal__left-col {
+
+}
+

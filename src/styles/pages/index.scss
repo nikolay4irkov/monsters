@@ -5,7 +5,44 @@
 
   @media (min-width: $min-lg) {
     padding-bottom: 0;
+    padding-top: 190px;
   }
+}
+
+.hero-monster-img {
+  position: absolute;
+  width: 380px;
+  height: auto;
+  right: -200px;
+  top: 100px;
+
+  @media (min-width: $min-xs) {
+    right: -60px;
+  }
+
+  @media (min-width: $min-sm) {
+    right: -60px;
+    width: 450px;
+  }
+
+  @media (min-width: $min-lg) {
+    width: 526px;
+    right: 100px;
+  }
+}
+
+.hero-bg {
+  display: none;
+
+  @media (min-width: $min-lg) {
+    display: block;
+    position: absolute;
+    width: 103%;
+    margin: 0 -10px;
+    height: auto;
+    z-index: -1;
+  }
+
 }
 
 .main-title {
@@ -14,7 +51,7 @@
   max-width: 90%;
   letter-spacing: 0.01em;
 
-  @media (min-width: $min-lg) {
+  @media (min-width: $min-md) {
     max-width: 666px;
     font-size: 48px;
     line-height: 54px;
@@ -88,6 +125,197 @@
 
 .info-wrapper {
   @media (min-width: $min-md) {
-   max-width: 380px;
+    max-width: 380px;
+  }
+}
+
+.hunters-wrapper {
+  @media (min-width: $min-md) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.hunters-block {
+  @media (min-width: $min-md) {
+    max-width: 550px;
+  }
+}
+
+.title-advantages {
+  @media (min-width: $min-lg) {
+    padding-top: 50px;
+  }
+}
+
+.cards-advantages-wrapper {
+  @media (min-width: $min-lg) {
+    position: relative;
+    width: 100%;
+    height: 836px;
+  }
+}
+
+.card-advantage {
+  @media (min-width: $min-lg) {
+    position: absolute;
+
+    &:nth-of-type(1) {
+      top: 0;
+      right: 190px;
+    }
+  ;
+    &:nth-of-type(2) {
+      top: 230px;
+      left: 0;
+    }
+  ;
+    &:nth-of-type(3) {
+      bottom: 0;
+      right: 0;
+    }
+  ;
+  }
+}
+
+.oval {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 200px;
+  height: 100px;
+  width: 1100px;
+  height: 854px;
+  background: $yellow;
+  //border-radius: 100px / 50px;
+  border-radius: 50%;
+
+  @media (min-width: $min-lg) {
+    width: 1696px;
+    height: 496px;
+  }
+}
+
+.app-wrapper {
+  @media (min-width: $min-md) {
+    display: flex;
+    align-items: center;
+    //width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $min-lg) {
+    width: 1120px;
+    justify-content: space-between;
+  }
+}
+
+.app-wrapper__item {
+
+}
+
+.app-wrapper__item--left-col {
+  @media (min-width: $min-md) {
+    max-width: 430px;
+    min-width: 430px;
+  }
+}
+
+.swiper-container--app-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: $min-md) {
+    flex-direction: row;
+    width: 550px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+  }
+}
+
+.slider-app__buttons-wrapper {
+  display: flex;
+  align-self: center;
+  margin: 30px 0;
+  width: 109px;
+  justify-content: space-between;
+
+  @media (min-width: $min-md) {
+    margin: unset;
+    align-self: unset;
+    display: flex;
+    width: 170px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+
+  }
+}
+
+.slider-game__buttons-wrapper {
+  display: none;
+
+  @media (min-width: $min-md) {
+    width: 75px;
+  }
+
+  @media (min-width: $min-lg){
+    display: flex;
+  }
+}
+
+.swiper-app__img {
+  display: block;
+  margin: 0 auto;
+  width: 229px;
+  height: auto;
+
+  @media (min-width: $min-md) {
+    width: 265px;
+    display: inline;
+    margin: unset;
+  }
+}
+
+.phone-bg {
+  display: none;
+
+  @media (min-width: $min-md) {
+    display: block;
+    width: 214px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 77px;
+    transform: translateY(-50%);
+    opacity: 0.4;
+  }
+}
+
+.founder-img {
+  width: 100%;
+}
+
+.good-book-img {
+  width: 49px;
+  height: 59.5px;
+  object-fit: cover;
+  margin-right: 11px;
+
+
+  @media (min-width: $min-md) {
+    margin-right: 30px;
+    width: 95px;
+    height: 115.5px;
   }
 }

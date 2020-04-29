@@ -2,11 +2,59 @@
 
 // Марджины
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mt-lg-100 {
+  @media (min-width: $min-lg) {
+    margin-top: 100px;
+  }
+}
+
+.mt-lg-0 {
+  @media (min-width: $min-lg) {
+    margin-top: 0;
+  }
+}
+
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-sm-30 {
+  @media (min-width: $min-sm) {
+    margin-bottom: 30px;
+  }
+}
+
+.mt-md-20 {
+  @media (min-width: $min-md) {
+    margin-top: 20px;
+  }
+}
+
+.mx-lg-auto {
+  @media (min-width: $min-md) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

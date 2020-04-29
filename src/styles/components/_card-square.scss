@@ -4,14 +4,22 @@
   border-radius: 30px;
   box-shadow: 18px 18px 30px #EDECFF;
   display: flex;
+  margin-bottom: 35px;
 
-  @media (min-width: $min-md){
+  @media (min-width: $min-xs) {
     width: 455px;
+    min-width: 455px;
     height: 441px;
+    margin: 0 auto 35px;
+  }
+
+  @media (min-width: $min-md) {
+    margin: 0;
+    //margin-bottom: 0;
   }
 }
 
 .card-square__img {
-display: block;
+  display: block;
   margin: auto;
 }
